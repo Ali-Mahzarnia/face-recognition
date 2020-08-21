@@ -245,7 +245,8 @@ missrate/400
 
 #install.packages("png")
 library(png)
-ali<-readPNG('D:/gitprojects/Face recognition via PCA and KNN/ali.PNG')
+
+ali<-readPNG('./ali.PNG')
 grid::grid.raster(ali)
 dim(ali)
 
@@ -302,8 +303,7 @@ triple <- function(temp) {
   return(rbind(tmp0,tmp1,tmp2))
 }
 
-setwd("D:/gitprojects/Face recognition via PCA and KNN")
-#################### set the directory to source file manually
+
 i=1
 l= paste0(i,".png")
 face<-readPNG(l)
@@ -328,8 +328,7 @@ display(a)
 # find 41st nearest face and report the three one are most frequent  among 41
 
 # example last pic 
-setwd("D:/gitprojects/Face recognition via PCA and KNN")
-#################### set the directory to source file manually
+
 
 i=1
 l= paste0(i,".png")
@@ -404,8 +403,7 @@ display(triple_prob(temp))
 
 ####### probability result
 
-setwd("D:/gitprojects/Face recognition via PCA and KNN")
-#################### set the directory to source file manually
+
 
 i=1
 l= paste0(i,".png")
